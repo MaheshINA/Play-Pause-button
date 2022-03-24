@@ -1,0 +1,230 @@
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML background music</title>
+    <style type="text/css">
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background: #808080;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #btn {
+            width: 200px;
+            height: 70px;
+            border-width: 4px;
+            border-radius: 35px;
+            font-size: 25px;
+            font-weight: bold;
+            color: #ff6a00;
+            cursor: pointer;
+        }
+
+            #btn:active {
+                font-size: 23px;
+            }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: "Inconsolata", monospace;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #050801;
+        }
+
+        p {
+            color: #fff;
+            text-align: center;
+            margin-top: 10px
+        }
+
+        a {
+            position: relative;
+            display: inline-block;
+            padding: 25px 30px;
+            margin: 40px;
+            font-size: 24px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            transition: 0.5s;
+        }
+
+        .btns {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 90vh;
+            flex-direction: row;
+        }
+
+        .blue-btn {
+            color: #03e9f4;
+            border: 1.5px solid #03e9f4;
+            border-radius: 7px;
+        }
+
+            .blue-btn:hover {
+                background-color: #03e9f4;
+                color: #050801;
+                box-shadow: 0px 0px 5px #03e9f4, 0px 0px 25px #03e9f4, 0px 0px 50px #03e9f4, 0px 0px 100px #03e9f4;
+                -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+            }
+
+        .pink-btn {
+            color: #e100ff;
+            border: 1.5px solid #e100ff;
+            border-radius: 7px;
+        }
+
+            .pink-btn:hover {
+                background-color: #e100ff;
+                color: #050801;
+                box-shadow: 0px 0px 5px #e100ff, 0px 0px 25px #e100ff, 0px 0px 50px #e100ff, 0px 0px 100px #e100ff;
+                -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+            }
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh
+        }
+
+        h1 {
+            color: #484848;
+            font-size: 50px;
+            font-weight: bold;
+            font-family: monospace;
+            letter-spacing: 7px;
+            cursor: pointer
+        }
+
+            h1 span {
+                transition: .5s linear
+            }
+
+            h1:hover span:nth-child(1) {
+                margin-right: 5px
+            }
+
+                h1:hover span:nth-child(1):after {
+                    content: "'";
+                }
+
+            h1:hover span:nth-child(2) {
+                margin-left: 30px
+            }
+
+            h1:hover span {
+                color: #ffff;
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+            }
+        /*made with ❤, by mahi/
+
+
+    </style>
+
+</head>
+<body>
+    <h1><span>I</span>M<span>POSSIBLE</span>  To</h1>
+    <script>
+        function toggleplay() {
+            var myAudio = document.getElementById("myAudio");
+            return myAudio.paused ? myAudio.play() : myAudio.pause();
+        };
+    </script>
+    <audio id="myAudio" preload="auto" loop>
+        <source src="~/song/uandi.mp3" />
+    </audio>
+    <!-- <button id="btn" onclick="toggleplay()">play</button> -->
+    
+
+    <div class="btns">
+        <a class="blue-btn" onclick="toggleplay()">PLAY</a>
+
+    </div>
+
+    <audio id="song" loop>
+        window.onload = function () {
+        <source src="~/Song/uandi.mp3" />
+    </audio>
+
+    <script>
+        window.addEventListener('', () => {
+            document.getElementById("song").play();
+        });
+
+        window.addEventListener('', () => {
+            document.getElementById("song").play();
+        });
+
+        window.addEventListener('', () => {
+            document.getElementById("song").play();
+        });
+        let inactivityTime = function () {
+            let time;
+            window.onload = resetTimer;
+            document.onmousemove = resetTimer;
+            document.onkeypress = resetTimer;
+            function Idel() {
+                document.getElementById("song").play();
+            }
+            function resetTimer() {
+                clearTimeout(time);
+                time = setTimeout(Idel, 5000)
+            }
+        };
+        window.onload = function () {
+            inactivityTime();
+
+
+
+            window.addEventListener('mousemove', () => {
+                document.getElementById("song").pause();
+            });
+
+            window.addEventListener('keypress', () => {
+                document.getElementById("song").pause();
+            });
+            window.addEventListener('click', () => {
+                document.getElementById("song").pause();
+            });
+            window.addEventListener('mousewheel', () => {
+                document.getElementById("song").pause();
+            });
+            window.addEventListener('keydown', () => {
+                document.getElementById("song").pause();
+            });
+            window.addEventListener('keyup', () => {
+                document.getElementById("song").pause();
+            });
+        }
+    </script>
+    <script>
+
+    </script>
+
+
+
+</body>
+</html>
